@@ -29,6 +29,23 @@ Cuántos capítulos lleva y en qué estado está cambian cada semana, así que c
 oficial y pon la fecha del dato. Enlaza solo a plataformas oficiales o a la página del autor, nunca a
 sitios de scans.
 
+### Géneros y etiquetas habituales
+
+Los usuarios suelen pedir por subgénero, con nombres en español o en inglés. Traduce la petición a
+estas etiquetas al buscar (en español y en inglés, en webs como MangaUpdates, AniList o la propia
+plataforma) y agrupa los resultados por ellas:
+
+- **Renació en / reencarnación** (reincarnation): muere y renace como otra persona, villana, noble...
+- **Regresión** (regression): vuelve al pasado con sus recuerdos para cambiar su destino.
+- **Apocalipsis** (apocalypse, post-apocalyptic): monstruos, zombis, el mundo se convierte en un juego.
+- **Sistema / estilo juego** (system, leveling): ventanas de estado, niveles, misiones.
+- **Torre / mazmorras / cazadores** (tower, dungeon, hunters).
+- **Isekai**: transportado a otro mundo, o dentro de una novela o un juego.
+
+Las combinaciones son muy comunes (regresión + apocalipsis, sistema + mazmorras). Cuando el usuario
+pide "por ese estilo", da variedad dentro de esas etiquetas en lugar de cinco títulos casi iguales,
+e indica de cada uno qué etiquetas cumple.
+
 Si el usuario busca material **para usarlo en videos**, da prioridad a obras con licencia libre o a
 autores independientes que aceptan colaboraciones, y marca claramente cuáles se pueden usar.
 
