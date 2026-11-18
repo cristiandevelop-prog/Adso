@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: capitulo-propio-a-pdf-y-guion
+expected_outcome: |
+  Genera un PDF del capítulo, una carpeta con 6 viñetas recortadas, un manifest con licencia
+  "Obra propia" y un guion.md en español con gancho, escenas que citan los paneles, cierre y créditos,
+  y que recoge los diálogos reales (Mina, el gato que habla, la puerta que se abre esta noche).
+context:
+  scaffold_script: place-files.sh

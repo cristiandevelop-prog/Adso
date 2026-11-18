@@ -1,0 +1,5 @@
+schema_version: "1.1"
+name: busca-recomendaciones-isekai
+expected_outcome: |
+  Devuelve 3-4 manhwas completos de regresión/isekai con ficha en español: autor, estado,
+  capítulos con fecha del dato, sinopsis sin spoilers y plataformas oficiales. Sin enlaces a scans.
