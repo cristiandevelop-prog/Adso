@@ -6,6 +6,8 @@
 
 > ⚠️ **Este guion se escribió ANTES de que saliera el juego.** Lo marcado con `[VERIFICAR]` se basa en los tráilers o en lo habitual en la saga. Confírmalo mientras grabas y ajusta el texto si el juego funciona distinto. Nunca afirmes algo que no hayas visto en pantalla.
 
+> 🔇 **Graba con la RADIO DEL JUEGO EN SILENCIO.** Por la música con licencia, El Rubius recibió un aviso de copyright y sacó su maratón de YouTube. Pon música libre de derechos al editar. Más datos verificados en `reports/Radar de contenido GTA VI.md`.
+
 ---
 
 ## 0:00 – 0:20 · GANCHO
