@@ -1,15 +1,12 @@
-// ===================================================================
-// Ejercicios de JavaScript
-// Cada ejercicio: 1) se declaran las variables, 2) la función, 3) se prueba.
-// ===================================================================
+// Ejercicio 1
+//Comprobar contraseña
 
-// 1. Contraseña válida
-// En JavaScript no existe .equals() (eso es de Java).
-// Su equivalente es === : compara si dos valores son exactamente iguales.
-let clave1 = "2Fj(jjbFsuj";
-let clave2 = "eoZiugBf&g9";
-let claveIngresada = "2Fj(jjbFsuj";
+//Declaramos variables
+let clave1 = "123456789";
+let clave2 = "abcdefgh";
+let claveIngresada = "123456789";
 
+//Usamos === para la comparacion entre contraseñas
 function contrasenaValida(clave) {
   let esValida = false;
   if (clave === clave1 || clave === clave2) {
@@ -17,11 +14,13 @@ function contrasenaValida(clave) {
   }
   return esValida;
 }
-
 console.log("1.", contrasenaValida(claveIngresada)); // true
 console.log("1.", contrasenaValida("hola"));         // false
 
-// 2. Calcular impuestos
+
+//Ejercicio 2 
+//Calcular impuestos
+//Declaramos Variables
 let edad = 20;
 let ingresos = 1500;
 
@@ -32,10 +31,13 @@ function calcularImpuestos(edad, ingresos) {
   }
   return impuesto;
 }
+console.log("2.", calcularImpuestos(edad, ingresos));
 
-console.log("2.", calcularImpuestos(edad, ingresos)); // 600
 
-// 3. IMC
+
+//Ejercicio 3
+//IMC
+//Declaramos variables
 let peso = 72;
 let altura = 1.6;
 
@@ -56,9 +58,13 @@ function bmi(peso, altura) {
 
 console.log("3.", bmi(peso, altura)); // Sobrepeso
 
-// 4. Imprimir un arreglo
+
+//Ejercicio 4
+//Imprimir un arreglo
+//Declaramos variables
 let elementos = [1, "Hola", 2, "Mundo"];
 
+//Usamos un ciclo for para recorrer el arreglo e imprimir cada elemento
 function imprimirArreglo(arreglo) {
   for (let i = 0; i < arreglo.length; i++) {
     console.log("4.", arreglo[i]);
@@ -67,9 +73,13 @@ function imprimirArreglo(arreglo) {
 
 imprimirArreglo(elementos);
 
-// 5. Número de likes
+
+//Ejercicio 5
+//Número de likes
+//Declaramos variables
 let cantidadLikes = 34567;
 
+//Usamos Math.floor para quitar los decimales al dividir entre mil o un millón
 function likes(numero) {
   let texto = "";
   if (numero >= 1000000) {
@@ -86,9 +96,13 @@ console.log("5.", likes(cantidadLikes)); // 34K
 console.log("5.", likes(7456345));       // 7M
 console.log("5.", likes(983));           // 983
 
-// 6. FizzBuzz
+
+//Ejercicio 6
+//FizzBuzz
+//Declaramos variables
 let numeroFizz = 15;
 
+//Usamos % (residuo) para saber si el número es múltiplo de 3, de 5 o de ambos
 function fizzBuzz(numero) {
   let resultado;
   if (numero % 3 === 0 && numero % 5 === 0) {
@@ -106,10 +120,14 @@ function fizzBuzz(numero) {
 console.log("6.", fizzBuzz(numeroFizz)); // fizzbuzz
 console.log("6.", fizzBuzz(9), fizzBuzz(10), fizzBuzz(7)); // fizz buzz 7
 
-// 7. Contar rango de números (excluyéndolos)
+
+//Ejercicio 7
+//Contar rango de números (excluyéndolos)
+//Declaramos variables
 let inicioConteo = 1;
 let finConteo = 9;
 
+//Usamos un ciclo for que empieza después del inicio y termina antes del fin
 function contarRango(inicio, fin) {
   let contador = 0;
   for (let i = inicio + 1; i < fin; i++) {
@@ -120,10 +138,14 @@ function contarRango(inicio, fin) {
 
 console.log("7.", contarRango(inicioConteo, finConteo)); // 7
 
-// 8. Sumar rango de números (incluyéndolos)
+
+//Ejercicio 8
+//Sumar rango de números (incluyéndolos)
+//Declaramos variables
 let inicioSuma = 1;
 let finSuma = 4;
 
+//Usamos un ciclo for con <= para incluir el número final en la suma
 function sumarRango(inicio, fin) {
   let suma = 0;
   for (let i = inicio; i <= fin; i++) {
@@ -134,9 +156,13 @@ function sumarRango(inicio, fin) {
 
 console.log("8.", sumarRango(inicioSuma, finSuma)); // 10
 
-// 9. Número de aes
+
+//Ejercicio 9
+//Número de aes
+//Declaramos variables
 let palabraAes = "matematicas";
 
+//Usamos un ciclo for para revisar letra por letra y contar las "a"
 function numeroDeAes(texto) {
   let contador = 0;
   for (let i = 0; i < texto.length; i++) {
@@ -149,10 +175,14 @@ function numeroDeAes(texto) {
 
 console.log("9.", numeroDeAes(palabraAes)); // 3
 
-// 10. Número de caracteres
+
+//Ejercicio 10
+//Número de caracteres
+//Declaramos variables
 let textoBuscar = "javascript";
 let caracterBuscar = "a";
 
+//Usamos un ciclo for para comparar cada letra con el caracter que buscamos
 function numeroDeCaracteres(texto, caracter) {
   let contador = 0;
   for (let i = 0; i < texto.length; i++) {
@@ -165,9 +195,13 @@ function numeroDeCaracteres(texto, caracter) {
 
 console.log("10.", numeroDeCaracteres(textoBuscar, caracterBuscar)); // 2
 
-// 11. Sumar arreglo
+
+//Ejercicio 11
+//Sumar arreglo
+//Declaramos variables
 let numerosSumar = [3, 1, 2];
 
+//Usamos una variable suma que empieza en 0 y le vamos agregando cada número
 function sumarArreglo(arreglo) {
   let suma = 0;
   for (let i = 0; i < arreglo.length; i++) {
@@ -178,9 +212,13 @@ function sumarArreglo(arreglo) {
 
 console.log("11.", sumarArreglo(numerosSumar)); // 6
 
-// 12. Multiplicar arreglo
+
+//Ejercicio 12
+//Multiplicar arreglo
+//Declaramos variables
 let numerosMultiplicar = [4, 1, 2, 3];
 
+//Usamos una variable producto que empieza en 1 (si empezara en 0, todo daría 0)
 function multiplicarArreglo(arreglo) {
   let producto = 1;
   for (let i = 0; i < arreglo.length; i++) {
@@ -191,9 +229,13 @@ function multiplicarArreglo(arreglo) {
 
 console.log("12.", multiplicarArreglo(numerosMultiplicar)); // 24
 
-// 13. Remover ceros
+
+//Ejercicio 13
+//Remover ceros
+//Declaramos variables
 let numerosConCeros = [0, 1, 0, 2, 0, 3];
 
+//Usamos push para agregar al nuevo arreglo solo los números diferentes de 0
 function removerCeros(arreglo) {
   let sinCeros = [];
   for (let i = 0; i < arreglo.length; i++) {
@@ -206,12 +248,16 @@ function removerCeros(arreglo) {
 
 console.log("13.", removerCeros(numerosConCeros)); // [1, 2, 3]
 
-// 14. Sumar arreglo entre el rango
-// (en el PDF se llama sumarArreglo; se cambia el nombre para no chocar con el 11)
+
+//Ejercicio 14
+//Sumar arreglo entre el rango
+//(en el PDF se llama sumarArreglo; se cambia el nombre para no chocar con el 11)
+//Declaramos variables
 let numerosRango = [1, 2, 3, 4, 5];
 let posicionInicial = 1;
 let posicionFinal = 3;
 
+//Usamos el ciclo for solo entre la posición inicial y la final
 function sumarArregloRango(arreglo, inicio, fin) {
   let suma = 0;
   for (let i = inicio; i <= fin; i++) {
@@ -222,9 +268,13 @@ function sumarArregloRango(arreglo, inicio, fin) {
 
 console.log("14.", sumarArregloRango(numerosRango, posicionInicial, posicionFinal)); // 9
 
-// 15. Transcribir ADN a ARN
+
+//Ejercicio 15
+//Transcribir ADN a ARN
+//Declaramos variables
 let cadenaAdn = "ACGT";
 
+//Usamos if / else if para cambiar cada letra por su complemento
 function transcribir(adn) {
   let arn = "";
   for (let i = 0; i < adn.length; i++) {
@@ -244,9 +294,13 @@ function transcribir(adn) {
 
 console.log("15.", transcribir(cadenaAdn)); // UGCA
 
-// 16. Capitalizar palabra
+
+//Ejercicio 16
+//Capitalizar palabra
+//Declaramos variables
 let nombre = "pedro";
 
+//Usamos charAt(0) para tomar la primera letra y toUpperCase para volverla mayúscula
 function capitalizar(texto) {
   let primeraLetra = texto.charAt(0).toUpperCase();
   let resto = texto.slice(1);
@@ -255,10 +309,14 @@ function capitalizar(texto) {
 
 console.log("16.", capitalizar(nombre)); // Pedro
 
-// 17. Capitalizar cada palabra
-// (en el PDF también se llama capitalizar; se cambia el nombre para no chocar con el 16)
+
+//Ejercicio 17
+//Capitalizar cada palabra
+//(en el PDF también se llama capitalizar; se cambia el nombre para no chocar con el 16)
+//Declaramos variables
 let frase = "hola mundo desde javascript";
 
+//Usamos split para separar las palabras, las capitalizamos y join para unirlas
 function capitalizarPalabras(texto) {
   let palabras = texto.split(" ");
   for (let i = 0; i < palabras.length; i++) {
@@ -269,9 +327,13 @@ function capitalizarPalabras(texto) {
 
 console.log("17.", capitalizarPalabras(frase)); // Hola Mundo Desde Javascript
 
-// 18. Encontrar el número máximo (sin Math.max)
+
+//Ejercicio 18
+//Encontrar el número máximo (sin Math.max)
+//Declaramos variables
 let numerosMax = [3, 9, 6];
 
+//Usamos > para guardar el número más grande que vamos encontrando
 function max(arreglo) {
   let mayor = arreglo[0];
   for (let i = 1; i < arreglo.length; i++) {
@@ -284,9 +346,13 @@ function max(arreglo) {
 
 console.log("18.", max(numerosMax)); // 9
 
-// 19. Encontrar el número mínimo (sin Math.min)
+
+//Ejercicio 19
+//Encontrar el número mínimo (sin Math.min)
+//Declaramos variables
 let numerosMin = [3, 9, 6];
 
+//Usamos < para guardar el número más pequeño que vamos encontrando
 function min(arreglo) {
   let menor = arreglo[0];
   for (let i = 1; i < arreglo.length; i++) {
@@ -299,9 +365,13 @@ function min(arreglo) {
 
 console.log("19.", min(numerosMin)); // 3
 
-// 20. Generar contraseña
+
+//Ejercicio 20
+//Generar contraseña
+//Declaramos variables
 let textoClave = "Hola Mundo";
 
+//Usamos toLowerCase para pasar a minúsculas y luego cambiamos letra por letra
 function password(texto) {
   let minusculas = texto.toLowerCase();
   let nuevaClave = "";
@@ -326,9 +396,13 @@ function password(texto) {
 
 console.log("20.", password(textoClave)); // h0l4mund0
 
-// 21. Encontrar números pares
+
+//Ejercicio 21
+//Encontrar números pares
+//Declaramos variables
 let numerosPares = [1, 2, 3, 4, 5, 6];
 
+//Usamos % 2 === 0 para saber si un número es par
 function pares(arreglo) {
   let soloPares = [];
   for (let i = 0; i < arreglo.length; i++) {
@@ -341,9 +415,13 @@ function pares(arreglo) {
 
 console.log("21.", pares(numerosPares)); // [2, 4, 6]
 
-// 22. Encontrar posiciones de números pares
+
+//Ejercicio 22
+//Encontrar posiciones de números pares
+//Declaramos variables
 let numerosPosiciones = [1, 2, 3, 4, 5, 6];
 
+//Usamos push(i) para guardar la posición y no el número
 function posiciones(arreglo) {
   let listaPosiciones = [];
   for (let i = 0; i < arreglo.length; i++) {
@@ -356,9 +434,13 @@ function posiciones(arreglo) {
 
 console.log("22.", posiciones(numerosPosiciones)); // [1, 3, 5]
 
-// 23. Duplicar elementos
+
+//Ejercicio 23
+//Duplicar elementos
+//Declaramos variables
 let numerosDuplicar = [1, 2, 3];
 
+//Usamos push para guardar cada número multiplicado por 2 en un nuevo arreglo
 function duplicar(arreglo) {
   let duplicados = [];
   for (let i = 0; i < arreglo.length; i++) {
@@ -369,9 +451,13 @@ function duplicar(arreglo) {
 
 console.log("23.", duplicar(numerosDuplicar)); // [2, 4, 6]
 
-// 24. Palabras que empiezan por "a"
+
+//Ejercicio 24
+//Palabras que empiezan por "a"
+//Declaramos variables
 let palabrasA = ["beta", "alfa", "Arbol", "gama"];
 
+//Usamos charAt(0) y toLowerCase para que cuente la "a" mayúscula y minúscula
 function empiezanConA(arreglo) {
   let conA = [];
   for (let i = 0; i < arreglo.length; i++) {
@@ -385,9 +471,13 @@ function empiezanConA(arreglo) {
 
 console.log("24.", empiezanConA(palabrasA)); // ["alfa", "Arbol"]
 
-// 25. Palabras que terminan en "s"
+
+//Ejercicio 25
+//Palabras que terminan en "s"
+//Declaramos variables
 let palabrasS = ["pruebas", "arroz", "árbol", "tokens"];
 
+//Usamos charAt(palabra.length - 1) para tomar la última letra de cada palabra
 function terminanConS(arreglo) {
   let conS = [];
   for (let i = 0; i < arreglo.length; i++) {
@@ -402,9 +492,13 @@ function terminanConS(arreglo) {
 
 console.log("25.", terminanConS(palabrasS)); // ["pruebas", "tokens"]
 
-// 26. Imprimir una matriz
+
+//Ejercicio 26
+//Imprimir una matriz
+//Declaramos variables
 let matrizNumeros = [[1, 2], [3, 4]];
 
+//Usamos dos ciclos for: el primero recorre las filas y el segundo los elementos de cada fila
 function imprimirMatriz(matriz) {
   for (let i = 0; i < matriz.length; i++) {
     for (let j = 0; j < matriz[i].length; j++) {
@@ -415,10 +509,14 @@ function imprimirMatriz(matriz) {
 
 imprimirMatriz(matrizNumeros);
 
-// 27. Traducir números a palabras (0 a 9)
+
+//Ejercicio 27
+//Traducir números a palabras (0 a 9)
+//Declaramos variables
 let nombresNumeros = ["cero", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve"];
 let numerosTraducir = [0, 1, 2, 3];
 
+//Usamos el número como posición para buscar su palabra en nombresNumeros
 function numerosAPalabras(arreglo) {
   let palabras = [];
   for (let i = 0; i < arreglo.length; i++) {
@@ -429,9 +527,13 @@ function numerosAPalabras(arreglo) {
 
 console.log("27.", numerosAPalabras(numerosTraducir)); // ["cero", "uno", "dos", "tres"]
 
-// 28. Traducir palabras a números (-1 si no es número)
+
+//Ejercicio 28
+//Traducir palabras a números (-1 si no es número)
+//Declaramos variables
 let palabrasTraducir = ["cero", "uno", "hola", "nueve"];
 
+//Usamos dos ciclos for: buscamos cada palabra en nombresNumeros; si no está, queda en -1
 function palabrasANumeros(arreglo) {
   let numeros = [];
   for (let i = 0; i < arreglo.length; i++) {
@@ -448,9 +550,13 @@ function palabrasANumeros(arreglo) {
 
 console.log("28.", palabrasANumeros(palabrasTraducir)); // [0, 1, -1, 9]
 
-// 29. Número de asteriscos en un arreglo
+
+//Ejercicio 29
+//Número de asteriscos en un arreglo
+//Declaramos variables
 let arregloAsteriscos = ["", "*", "", "*"];
 
+//Usamos === "*" para contar solo los asteriscos
 function numAsteriscos(arreglo) {
   let contador = 0;
   for (let i = 0; i < arreglo.length; i++) {
@@ -463,14 +569,18 @@ function numAsteriscos(arreglo) {
 
 console.log("29.", numAsteriscos(arregloAsteriscos)); // 2
 
-// 30. Número de asteriscos en una matriz
-// (en el PDF también se llama numAsteriscos; se cambia el nombre para no chocar con el 29)
+
+//Ejercicio 30
+//Número de asteriscos en una matriz
+//(en el PDF también se llama numAsteriscos; se cambia el nombre para no chocar con el 29)
+//Declaramos variables
 let matrizAsteriscos = [
   ["*", "", "*"],
   ["", "*", ""],
   ["*", "", "*"],
 ];
 
+//Usamos dos ciclos for para revisar cada fila y cada elemento de la matriz
 function numAsteriscosMatriz(matriz) {
   let contador = 0;
   for (let i = 0; i < matriz.length; i++) {
@@ -485,10 +595,14 @@ function numAsteriscosMatriz(matriz) {
 
 console.log("30.", numAsteriscosMatriz(matrizAsteriscos)); // 5
 
-// 31. Distancia entre dos strings
+
+//Ejercicio 31
+//Distancia entre dos strings
+//Declaramos variables
 let texto1 = "hola";
 let texto2 = "hala";
 
+//Usamos !== para contar las letras diferentes en la misma posición
 function distancia(a, b) {
   let diferentes = 0;
   let largo = a.length;
